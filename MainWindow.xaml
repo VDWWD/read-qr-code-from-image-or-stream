@@ -1,0 +1,38 @@
+﻿<Window x:Class="ReadQrCodeFromStream.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ReadQrCodeFromStream"
+        mc:Ignorable="d"
+        Title="QR Code Reader" 
+        Height="400" 
+        Width="370"
+        Background="#566895"
+        >
+    <StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="15" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="10" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="70" />
+            </Grid.RowDefinitions>
+
+            <Button Name="ReadFromDesktop" Grid.Row="1" Grid.Column="1" Content="Read QR Code from Desktop" Click="ReadFromDesktop_Click" Background="#435175" BorderBrush="#2a385a" Foreground="White" />
+            <Button Name="ReadFromDisk" Grid.Row="1" Grid.Column="3" Content="Read QR Code from Disk" Click="ReadFromDisk_Click" Background="#435175" BorderBrush="#2a385a" Foreground="White" />
+
+            <TextBlock Name="TextBlock1" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" TextWrapping="Wrap" Foreground="White" />
+        </Grid>
+        
+        <Image Name="Image1" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3" Width="200" Height="200" Margin="0, 10, 0, 0" />
+        
+    </StackPanel>
+</Window>
