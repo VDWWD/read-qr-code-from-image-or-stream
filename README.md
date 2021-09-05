@@ -6,4 +6,4 @@ More info: https://www.vanderwaal.eu/mini-projecten/read-qr-code-from-image-or-s
 
 &nbsp;
 
-<img src="https://www.vanderwaal.eu/files/read-qr-code-from-image-or-stream.jpg">
+<img src="https://www.vdanderwaal.eu/files/read-qr-code-from-image-or-stream.jpg">
